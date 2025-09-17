@@ -1,4 +1,4 @@
-import TourCard from "@/components/TourCard";
+import TourCard from "@/app/components/TourCard";
 
 const tours = [
   {
