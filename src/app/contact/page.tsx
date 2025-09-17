@@ -204,8 +204,9 @@ export default function ContactPage() {
                   </span>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Located in the heart of Amritsar's spiritual district, just
-                  steps away from the Golden Temple's serene surroundings.
+                  Located in the heart of Amritsar&apos;s spiritual district,
+                  just steps away from the Golden Temple&apos;s serene
+                  surroundings.
                 </p>
               </div>
             </div>
@@ -299,9 +300,9 @@ export default function ContactPage() {
           </div>
 
           <p className="mt-6 text-gray-600 max-w-md mx-auto">
-            We're here to help you plan your perfect journey.
+            We&apos;re here to help you plan your perfect journey.
             <span className="text-orange-600 font-medium">
-              Let's explore together!
+              Let&apos;s explore together!
             </span>
           </p>
         </div>
