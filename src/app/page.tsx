@@ -42,10 +42,6 @@ export default function Home() {
 
             <p className="text-xl sm:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed font-light">
               Handpicked tours across India:{" "}
-              <span className="text-orange-300 font-medium">Rajasthan</span>,
-              <span className="text-orange-300 font-medium"> Shimla</span>,
-              <span className="text-orange-300 font-medium"> Himachal</span> &
-              more.
             </p>
 
             <div className="pt-4">
