@@ -328,6 +328,13 @@ export default function Home() {
                   >
                     +91 8054855131
                   </a>
+                  <span className="text-gray-500">or</span>
+                  <a
+                    href="tel:+8194977729"
+                    className="text-orange-600 font-medium hover:text-orange-700 transition-colors ml-1"
+                  >
+                    +91 8194977729
+                  </a>
                 </li>
                 <li>
                   <a

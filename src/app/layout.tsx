@@ -58,6 +58,18 @@ export default function RootLayout({
                 Tours
               </Link>
               <Link
+                href="/about"
+                className="text-gray-200 hover:text-white transition"
+              >
+                About Us
+              </Link>
+              <Link
+                href="/career"
+                className="text-gray-200 hover:text-white transition"
+              >
+                Career
+              </Link>
+              <Link
                 href="/contact"
                 className="text-gray-200 hover:text-white transition"
               >
