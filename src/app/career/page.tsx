@@ -435,8 +435,8 @@ export default function CareerPage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Why Join Nomads Xplore?</h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Be part of a growing company that's shaping the future of tourism
-              in India
+              Be part of a growing company that&apos;s shaping the future of
+              tourism in India
             </p>
           </div>
 
@@ -541,8 +541,8 @@ export default function CareerPage() {
                       Initial Screening
                     </h3>
                     <p className="text-gray-600">
-                      We'll review your application and contact you within 3-5
-                      business days
+                      We&apos;ll review your application and contact you within
+                      3-5 business days
                     </p>
                   </div>
                 </div>
@@ -611,7 +611,7 @@ export default function CareerPage() {
           <p className="mt-6 text-gray-600 max-w-md mx-auto">
             Ready to start your career in tourism and technology?
             <span className="text-orange-600 font-medium">
-              We'd love to hear from you!
+              We&apos;d love to hear from you!
             </span>
           </p>
         </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ContactPage() {
   return (
     <main className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50/30">
@@ -216,9 +218,11 @@ export default function ContactPage() {
           <figure className="group relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/50 transform hover:-translate-y-2">
             {/* Image Container */}
             <div className="relative overflow-hidden">
-              <img
+              <Image
                 src="/images/goldentemple.jpg"
                 alt="Golden Temple, Amritsar"
+                width={800}
+                height={400}
                 className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"
               />
 

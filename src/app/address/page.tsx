@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AddressPage() {
   return (
     <main className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50/30">
@@ -198,9 +200,11 @@ export default function AddressPage() {
             {/* Office Image */}
             <figure className="group relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/50 transform hover:-translate-y-2">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="/images/goldentemple.jpg"
                   alt="Amritsar Office Location"
+                  width={800}
+                  height={400}
                   className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -482,7 +486,7 @@ export default function AddressPage() {
           <p className="mt-6 text-gray-600 max-w-md mx-auto">
             Need help finding our office or have questions?
             <span className="text-orange-600 font-medium">
-              We're here to help!
+              We&apos;re here to help!
             </span>
           </p>
         </div>

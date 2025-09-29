@@ -58,8 +58,8 @@ export default function AboutPage() {
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
                       With half a decade of experience in the tourism industry,
-                      we've built strong relationships and deep expertise in
-                      creating unforgettable travel experiences across India.
+                      we&apos;ve built strong relationships and deep expertise
+                      in creating unforgettable travel experiences across India.
                     </p>
                   </div>
                 </div>
@@ -175,8 +175,8 @@ export default function AboutPage() {
                 </h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                With 5 years of proven track record, we've earned the trust of
-                thousands of travelers through consistent, reliable service
+                With 5 years of proven track record, we&apos;ve earned the trust
+                of thousands of travelers through consistent, reliable service
                 delivery.
               </p>
             </div>
@@ -285,7 +285,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Tour Packages</h3>
               <p className="text-white/80">
-                Curated experiences showcasing India's diverse beauty
+                Curated experiences showcasing India&apos;s diverse beauty
               </p>
             </div>
           </div>
@@ -336,7 +336,7 @@ export default function AboutPage() {
           <p className="mt-6 text-gray-600 max-w-md mx-auto">
             Ready to explore India with our experienced team?
             <span className="text-orange-600 font-medium">
-              Let's create your perfect journey!
+              Let&apos;s create your perfect journey!
             </span>
           </p>
         </div>
