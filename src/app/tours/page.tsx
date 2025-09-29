@@ -1,57 +1,54 @@
+"use client"; // Required in App Router for useEffect to work
+
+import { useEffect, useState } from "react";
 import TourCard from "@/app/components/TourCard";
 
-const tours = [
-  {
-    name: "Rajasthan Royal Retreat",
-    image: "/images/rajasthan.jpg",
-    description:
-      "Explore forts, palaces, and desert safaris in majestic Rajasthan.",
-    price: "₹18,000",
-    duration: "5 Days / 4 Nights",
-  },
-  {
-    name: "Shimla Snow Escape",
-    image: "/images/shimla.jpg",
-    description: "A serene hill station getaway with snow-covered landscapes.",
-    price: "₹14,000",
-    duration: "4 Days / 3 Nights",
-  },
-  {
-    name: "Himachal Highlights (Dalhousie & Dharamshala)",
-    image: "/images/dalhousie.jpg",
-    description:
-      "Pine valleys, Tibetan culture, and calm mountain monasteries.",
-    price: "₹19,500",
-    duration: "6 Days / 5 Nights",
-  },
-  {
-    name: "Delhi Heritage Tour",
-    image: "/images/delhi.jpg",
-    description: "Experience Mughal architecture, markets, and street food.",
-    price: "₹9,999",
-    duration: "2 Days / 1 Night",
-  },
-  {
-    name: "Goa Beach Vibes",
-    image: "/images/goa.jpg",
-    description:
-      "Relax at sun-kissed beaches with vibrant nightlife and seafood.",
-    price: "₹15,000",
-    duration: "4 Days / 3 Nights",
-  },
-];
+// Define TypeScript type for a tour
+interface Tour {
+  name: string;
+  image: string;
+  description: string;
+  price: string;
+  duration: string;
+}
 
 export default function ToursPage() {
+  const [tours, setTours] = useState<Tour[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchTours() {
+      try {
+        const res = await fetch("https://opensheet.elk.sh/15HYoFPbfDDO-oSKlGaw8_6MVBauTOxi2wmz2CZZmC4I/Sheet1");
+        const data = await res.json();
+        // console.log("Fetched data:", data);
+        setTours(data);
+      } catch (error) {
+        console.error("Failed to fetch tours:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchTours();
+  }, []);
+
   return (
     <main className="p-8 max-w-7xl mx-auto">
       <h1 className="text-4xl font-bold mb-10 text-center">
         Explore Our Tour Packages
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {tours.map((tour, idx) => (
-          <TourCard key={idx} tour={tour} />
-        ))}
-      </div>
+
+      {loading ? (
+        <p className="text-center text-gray-500">Loading tour packages...</p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {tours.map((tour, idx) => (
+            <TourCard key={idx} tour={tour} />
+          ))}
+        </div>
+      )}
+
       <p className="text-center text-gray-600 mt-10">
         Custom itineraries available for all India. Ask us for a quote.
       </p>
