@@ -70,6 +70,12 @@ export default function RootLayout({
                 Career
               </Link>
               <Link
+                href="/address"
+                className="text-gray-200 hover:text-white transition"
+              >
+                Address
+              </Link>
+              <Link
                 href="/contact"
                 className="text-gray-200 hover:text-white transition"
               >
