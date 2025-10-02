@@ -53,10 +53,10 @@ export default function Header() {
             Address
           </Link>
           <Link
-            href="/contact"
+            href="/testimonials"
             className="text-gray-200 hover:text-white transition"
           >
-            Contact
+            Testimonials
           </Link>
         </div>
 
@@ -131,11 +131,11 @@ export default function Header() {
               Address
             </Link>
             <Link
-              href="/contact"
+              href="/testimonials"
               className="py-2 text-gray-200 hover:text-white"
               onClick={() => setOpen(false)}
             >
-              Contact
+              Testimonials
             </Link>
           </div>
         </div>
