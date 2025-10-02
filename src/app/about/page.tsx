@@ -295,7 +295,7 @@ export default function AboutPage() {
         <div className="text-center">
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
             <a
-              href="/contact"
+              href="/testimonials"
               className="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white bg-gradient-to-r from-orange-500 to-pink-600 rounded-full shadow-2xl hover:shadow-orange-500/25 transform hover:scale-105 transition-all duration-300 overflow-hidden"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-pink-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
@@ -312,7 +312,7 @@ export default function AboutPage() {
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
-              <span className="relative z-10">Get In Touch</span>
+              <span className="relative z-10">Read Testimonials</span>
             </a>
 
             <div className="text-gray-500 text-sm">
@@ -323,6 +323,7 @@ export default function AboutPage() {
               >
                 +91 8054855131
               </a>
+              <span className="text-gray-500"> </span>
               <span className="text-gray-500">or</span>
               <a
                 href="tel:+8194977729"

@@ -88,13 +88,22 @@ export default function Home() {
       </section>
 
       {/* Featured Destinations */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white">
+      <section className="relative py-20 bg-gradient-to-br from-gray-50 via-white to-orange-50/20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 rounded-full text-orange-600 text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
+              Most Popular Destinations
+            </div>
             <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent mb-4">
               Featured India Experiences
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-600 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-600 mx-auto rounded-full mb-6"></div>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              Discover the magic of India through our handpicked destinations,
+              each offering unique cultural experiences and breathtaking
+              landscapes.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -198,65 +207,80 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
 
+        {/* Floating elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-white/40 rounded-full animate-ping"></div>
+          <div className="absolute bottom-1/3 left-1/5 w-1.5 h-1.5 bg-white/35 rounded-full animate-pulse delay-1000"></div>
+        </div>
+
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-8">
-            Get Your <span className="text-yellow-300">Quick Quote</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white/90 text-sm font-medium mb-6">
+            <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+            Ready to Travel? • Quick Response Guaranteed
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            Get Your <span className="text-yellow-300">Instant Quote</span>
           </h2>
+          <p className="text-white/90 text-lg max-w-2xl mx-auto mb-12">
+            Connect with our travel experts now and get personalized
+            recommendations for your dream Indian adventure.
+          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <div className="flex items-center justify-center mb-4">
-                <svg
-                  className="w-8 h-8 text-yellow-300 mr-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
+            <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 transform hover:scale-105">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mr-4 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold text-white">Call Now</h3>
               </div>
-              <p className="text-white/90 mb-4">
-                Speak directly with our travel experts
+              <p className="text-white/90 mb-6 text-center">
+                Speak directly with our travel experts for instant assistance
               </p>
               <a
                 href="tel:+918054855131"
-                className="text-2xl font-bold text-yellow-300 hover:text-yellow-200 transition-colors"
+                className="block text-center text-2xl font-bold text-yellow-300 hover:text-yellow-200 transition-colors bg-white/10 rounded-xl py-3 hover:bg-white/20"
               >
                 +91 8054855131
               </a>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <div className="flex items-center justify-center mb-4">
-                <svg
-                  className="w-8 h-8 text-yellow-300 mr-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                <h3 className="text-2xl font-bold text-white">Alternative</h3>
+            <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 transform hover:scale-105">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mr-4 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 32 32"
+                  >
+                    <path d="M19.11 17.44c-.29-.14-1.69-.83-1.95-.92-.26-.1-.45-.14-.64.14-.19.29-.74.92-.9 1.11-.17.19-.33.22-.62.07-.29-.14-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2-.17-.29-.02-.45.12-.59.12-.12.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.48-.17 0-.36-.02-.55-.02s-.5.07-.76.36c-.26.29-1 1-1 2.43 0 1.43 1.03 2.81 1.18 3 .14.19 2.02 3.08 4.89 4.32.68.3 1.21.48 1.62.62.68.22 1.3.19 1.78.12.55-.07 1.69-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33zM16 3C9.37 3 4 8.37 4 15c0 2.64.86 5.08 2.33 7.06L4 29l7.12-2.29C13.03 27.52 14.47 28 16 28c6.63 0 12-5.37 12-12S22.63 3 16 3z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white">WhatsApp</h3>
               </div>
-              <p className="text-white/90 mb-4">
-                Second contact for your convenience
+              <p className="text-white/90 mb-6 text-center">
+                Quick chat with instant responses and photo sharing
               </p>
               <a
-                href="tel:+918198947729"
-                className="text-2xl font-bold text-yellow-300 hover:text-yellow-200 transition-colors"
+                href="https://wa.me/918054855131"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center text-2xl font-bold text-yellow-300 hover:text-yellow-200 transition-colors bg-white/10 rounded-xl py-3 hover:bg-white/20"
               >
-                +91 8198947729
+                Chat Now
               </a>
             </div>
           </div>
@@ -315,10 +339,10 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href="/testimonials"
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
-                    Contact Us
+                    Testimonials
                   </Link>
                 </li>
                 <li>
@@ -328,10 +352,11 @@ export default function Home() {
                   >
                     +91 8054855131
                   </a>
-                  <span className="text-gray-500">or</span>
+                </li>
+                <li>
                   <a
                     href="tel:+8194977729"
-                    className="text-orange-600 font-medium hover:text-orange-700 transition-colors ml-1"
+                    className="text-gray-300 font-medium hover:text-orange-700 transition-colors ml-1"
                   >
                     +91 8194977729
                   </a>
@@ -371,8 +396,10 @@ export default function Home() {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <span className="text-gray-300">
-                    Near Golden Temple, Heritage Street, Amritsar, Punjab 143001
+                  <span className="text-gray-300 leading-relaxed">
+                    second Floor ,Bhopal electronics building, chhehratha Rd,
+                    <br />
+                    Ghannu pur kale mode, Amritsar, Punjab
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">

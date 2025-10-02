@@ -8,7 +8,13 @@ type Tour = {
   duration: string;
 };
 
-export default function TourCard({ tour }: { tour: Tour }) {
+export default function TourCard({
+  tour,
+  onViewDetails,
+}: {
+  tour: Tour;
+  onViewDetails?: (tour: Tour) => void;
+}) {
   return (
     <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-gray-100">
       {/* Image Container with Overlay Effects */}
@@ -18,11 +24,11 @@ export default function TourCard({ tour }: { tour: Tour }) {
           alt={tour.name}
           width={600}
           height={280}
-          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+          className="w-full h-72 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-700"
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
         {/* Duration Badge */}
         <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-2 rounded-full shadow-lg transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-100">
@@ -98,7 +104,18 @@ export default function TourCard({ tour }: { tour: Tour }) {
 
         {/* Action Button */}
         <div className="pt-2">
-          <button className="w-full bg-gradient-to-r from-orange-500 to-pink-600 text-white py-3 px-6 rounded-2xl font-semibold shadow-lg hover:shadow-orange-500/25 transform hover:scale-105 transition-all duration-300 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0">
+          <button
+            onClick={() => onViewDetails?.(tour)}
+            className="
+    w-full 
+    bg-gradient-to-r from-orange-500 to-pink-600 
+    text-white py-3 px-6 rounded-2xl font-semibold 
+    shadow-lg hover:shadow-orange-500/25 
+    transform hover:scale-105 transition-all duration-300
+    opacity-100 translate-y-0
+    md:opacity-0 md:translate-y-2 md:group-hover:opacity-100 md:group-hover:translate-y-0
+  "
+          >
             <span className="flex items-center justify-center space-x-2">
               <span>View Details</span>
               <svg
