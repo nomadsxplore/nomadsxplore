@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
 import Header from "./components/Header";
@@ -50,10 +50,31 @@ export default function RootLayout({
                 © {new Date().getFullYear()} Nomads Xplore. All rights reserved.
               </p>
             </div>
-            <div className="text-sm">
-              <span className="text-gray-400"> Website Team Email:</span>{" "}
-              sharma9955@gmail.com ·{" "}
-              <span className="text-gray-400">Phone:</span> +91-7889289496
+            <div className="text-sm text-center sm:text-right">
+              <a
+                href="mailto:nomadsxploretheworld@gmail.com"
+                className="hover:text-white transition-colors"
+              >
+                nomadsxploretheworld@gmail.com
+              </a>
+              {" · "}
+              <a
+                href="mailto:sales@nomadsxplore.com"
+                className="hover:text-white transition-colors"
+              >
+                sales@nomadsxplore.com
+              </a>
+              {" · "}
+              <a
+                href="mailto:nomadsxplore@gmail.com"
+                className="hover:text-white transition-colors"
+              >
+                nomadsxplore@gmail.com
+              </a>
+              <span className="block sm:inline text-gray-400 mt-1 sm:mt-0">
+                {" "}
+                · Phone: +91-8194987729 · +91-8146977729
+              </span>
             </div>
           </div>
         </footer>

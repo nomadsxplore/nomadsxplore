@@ -1,7 +1,10 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import Image from "next/image";
+import TestimonialsSection from "./components/TestimonialsSection";
+import ContactEmails from "./components/ContactEmails";
+import { EXPERIENCE_BADGE } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -40,8 +43,13 @@ export default function Home() {
               </span>
             </h1>
 
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white/90 text-sm font-medium">
+              <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse" />
+              {EXPERIENCE_BADGE}
+            </div>
+
             <p className="text-xl sm:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed font-light">
-              Handpicked tours across India:{" "}
+              Handpicked tours across India
             </p>
 
             <div className="pt-4">
@@ -200,6 +208,8 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-100/30 to-purple-100/30 rounded-full blur-3xl -z-10"></div>
       </section>
 
+      <TestimonialsSection limit={6} />
+
       {/* Quick Quotes Section */}
       <section className="relative py-20 bg-gradient-to-br from-orange-500 via-pink-600 to-purple-700 overflow-hidden">
         {/* Background decorations */}
@@ -250,12 +260,20 @@ export default function Home() {
               <p className="text-white/90 mb-6 text-center">
                 Speak directly with our travel experts for instant assistance
               </p>
-              <a
-                href="tel:+918054855131"
-                className="block text-center text-2xl font-bold text-yellow-300 hover:text-yellow-200 transition-colors bg-white/10 rounded-xl py-3 hover:bg-white/20"
-              >
-                +91 8054855131
-              </a>
+              <div className="space-y-2">
+                <a
+                  href="tel:+918194987729"
+                  className="block text-center text-2xl font-bold text-yellow-300 hover:text-yellow-200 transition-colors bg-white/10 rounded-xl py-3 hover:bg-white/20"
+                >
+                  +91 8194987729
+                </a>
+                <a
+                  href="tel:+918146977729"
+                  className="block text-center text-2xl font-bold text-yellow-300 hover:text-yellow-200 transition-colors bg-white/10 rounded-xl py-3 hover:bg-white/20"
+                >
+                  +91 8146977729
+                </a>
+              </div>
             </div>
 
             <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 transform hover:scale-105">
@@ -275,7 +293,7 @@ export default function Home() {
                 Quick chat with instant responses and photo sharing
               </p>
               <a
-                href="https://wa.me/918054855131"
+                href="https://wa.me/918194987729"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center text-2xl font-bold text-yellow-300 hover:text-yellow-200 transition-colors bg-white/10 rounded-xl py-3 hover:bg-white/20"
@@ -347,26 +365,18 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="tel:+918054855131"
+                    href="tel:+918194987729"
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
-                    +91 8054855131
+                    +91 8194987729
                   </a>
                 </li>
                 <li>
                   <a
-                    href="tel:+8194977729"
-                    className="text-gray-300 font-medium hover:text-orange-700 transition-colors ml-1"
-                  >
-                    +91 8194977729
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="tel:+918198947729"
+                    href="tel:+918146977729"
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
-                    +91 8198947729
+                    +91 8146977729
                   </a>
                 </li>
               </ul>
@@ -402,9 +412,9 @@ export default function Home() {
                     Ghannu pur kale mode, Amritsar, Punjab
                   </span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <svg
-                    className="w-5 h-5 text-orange-400 flex-shrink-0"
+                    className="w-5 h-5 text-orange-400 flex-shrink-0 mt-1"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -416,12 +426,7 @@ export default function Home() {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <a
-                    href="mailto:nomadsexploretheworld@gmail.com"
-                    className="text-gray-300 hover:text-orange-400 transition-colors"
-                  >
-                    nomadsexploretheworld@gmail.com
-                  </a>
+                  <ContactEmails />
                 </div>
               </div>
             </div>

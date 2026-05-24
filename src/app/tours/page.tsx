@@ -1,4 +1,4 @@
-"use client"; // Required in App Router for useEffect to work
+﻿"use client"; // Required in App Router for useEffect to work
 
 import { useEffect, useState } from "react";
 import TourCard from "@/app/components/TourCard";
@@ -59,7 +59,7 @@ export default function ToursPage() {
           <div className="max-w-4xl space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white/90 text-sm font-medium mb-4">
               <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></span>
-              10+ Years Experience • 5000+ Happy Travelers
+              5+ Years Experience | 5000+ Happy Travelers
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white leading-tight">
@@ -98,7 +98,7 @@ export default function ToursPage() {
               </button>
 
               <a
-                href="tel:+918054855131"
+                href="tel:+918194987729"
                 className="group flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/30 text-white rounded-full hover:bg-white/20 transition-all"
               >
                 <svg
@@ -180,7 +180,7 @@ export default function ToursPage() {
             dream destination and we&apos;ll craft the perfect journey for you.
           </p>
           <a
-            href="tel:+918054855131"
+            href="tel:+918194987729"
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all"
           >
             <svg

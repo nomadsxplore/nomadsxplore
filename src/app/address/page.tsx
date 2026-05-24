@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
 export default function AddressPage() {
   return (
@@ -151,16 +151,16 @@ export default function AddressPage() {
                       </span>
                       <div className="space-y-1">
                         <a
-                          href="tel:+918054855131"
+                          href="tel:+918194987729"
                           className="text-gray-700 hover:text-green-600 transition-colors block"
                         >
-                          +91 8054855131
+                          +91 8194987729
                         </a>
                         <a
-                          href="tel:+918198947729"
+                          href="tel:+918146977729"
                           className="text-gray-700 hover:text-green-600 transition-colors block"
                         >
-                          +91 8198947729
+                          +91 8146977729
                         </a>
                       </div>
                     </div>
@@ -183,15 +183,29 @@ export default function AddressPage() {
                       </svg>
                     </div>
                     <div>
-                      <span className="font-semibold text-gray-900 block mb-1">
+                      <span className="font-semibold text-gray-900 block mb-2">
                         Email
                       </span>
-                      <a
-                        href="mailto:nomadsexploretheworld@gmail.com"
-                        className="text-gray-700 hover:text-blue-600 transition-colors break-all"
-                      >
-                        nomadsexploretheworld@gmail.com
-                      </a>
+                      <div className="space-y-2">
+                        <a
+                          href="mailto:nomadsxploretheworld@gmail.com"
+                          className="text-gray-700 hover:text-blue-600 transition-colors break-all block"
+                        >
+                          nomadsxploretheworld@gmail.com
+                        </a>
+                        <a
+                          href="mailto:sales@nomadsxplore.com"
+                          className="text-gray-700 hover:text-blue-600 transition-colors break-all block"
+                        >
+                          sales@nomadsxplore.com
+                        </a>
+                        <a
+                          href="mailto:nomadsxplore@gmail.com"
+                          className="text-gray-700 hover:text-blue-600 transition-colors break-all block"
+                        >
+                          nomadsxplore@gmail.com
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
