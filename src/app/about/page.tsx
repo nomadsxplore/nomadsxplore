@@ -1,4 +1,4 @@
-export default function AboutPage() {
+﻿export default function AboutPage() {
   return (
     <main className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50/30">
       {/* Background Decorations */}
@@ -31,7 +31,7 @@ export default function AboutPage() {
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-600 mx-auto rounded-full mb-6"></div>
 
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Your trusted travel partner with 5 years of expertise in tourism,
+            Your trusted travel partner with 10+ years of expertise in tourism,
             hotel industry, and transportation services across India
           </p>
         </div>
@@ -50,14 +50,14 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-pink-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
-                    <span className="text-white font-bold text-lg">5</span>
+                    <span className="text-white font-bold text-lg">10+</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      5 Years of Excellence
+                      10+ Years of Excellence
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      With half a decade of experience in the tourism industry,
+                      With over a decade of experience in the tourism industry,
                       we&apos;ve built strong relationships and deep expertise
                       in creating unforgettable travel experiences across India.
                     </p>
@@ -175,8 +175,8 @@ export default function AboutPage() {
                 </h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                With 5 years of proven track record, we&apos;ve earned the trust
-                of thousands of travelers through consistent, reliable service
+                With 10+ years of proven track record and 5000+ happy travelers,
+                we&apos;ve earned trust through consistent, reliable service
                 delivery.
               </p>
             </div>
@@ -318,18 +318,18 @@ export default function AboutPage() {
             <div className="text-gray-500 text-sm">
               or call us at
               <a
-                href="tel:+918054855131"
+                href="tel:+918194987729"
                 className="text-orange-600 font-medium hover:text-orange-700 transition-colors ml-1"
               >
-                +91 8054855131
+                +91 8194987729
               </a>
               <span className="text-gray-500"> </span>
               <span className="text-gray-500">or</span>
               <a
-                href="tel:+8194977729"
+                href="tel:+918146977729"
                 className="text-orange-600 font-medium hover:text-orange-700 transition-colors ml-1"
               >
-                +91 8194977729
+                +91 8146977729
               </a>
             </div>
           </div>

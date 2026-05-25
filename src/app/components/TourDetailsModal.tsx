@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect } from "react";
 import Image from "next/image";
@@ -133,7 +133,7 @@ export default function TourDetailsModal({
                     <span className="ml-1 font-bold text-gray-800">4.9</span>
                   </div>
                   <span className="text-gray-600 font-medium">
-                    5,000+ travelers
+                    5000+ happy travelers
                   </span>
                 </div>
               </div>
@@ -155,7 +155,7 @@ export default function TourDetailsModal({
                     </div>
                     <p className="text-sm text-gray-700 leading-relaxed">
                       <span className="font-bold text-gray-900">
-                        10 years experience
+                        10+ years experience
                       </span>{" "}
                       providing
                       <span className="font-bold text-gray-900">
@@ -199,7 +199,7 @@ export default function TourDetailsModal({
               {/* CTA Buttons */}
               <div className="pt-4 space-y-3">
                 <a
-                  href={`https://wa.me/918054855131?text=${encodeURIComponent(
+                  href={`https://wa.me/918194987729?text=${encodeURIComponent(
                     whatsappMsg
                   )}`}
                   target="_blank"

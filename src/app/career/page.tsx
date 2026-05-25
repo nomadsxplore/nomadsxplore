@@ -1,4 +1,4 @@
-export default function CareerPage() {
+﻿export default function CareerPage() {
   return (
     <main className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50/30">
       {/* Background Decorations */}
@@ -570,7 +570,7 @@ export default function CareerPage() {
         <div className="text-center">
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
             <a
-              href="mailto:nomadsexploretheworld@gmail.com?subject=Career Application - UI/SEO Intern"
+              href="mailto:nomadsxploretheworld@gmail.com?subject=Career Application - UI/SEO Intern"
               className="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white bg-gradient-to-r from-orange-500 to-pink-600 rounded-full shadow-2xl hover:shadow-orange-500/25 transform hover:scale-105 transition-all duration-300 overflow-hidden"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-pink-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
@@ -593,17 +593,17 @@ export default function CareerPage() {
             <div className="text-gray-500 text-sm">
               or call us at
               <a
-                href="tel:+918054855131"
+                href="tel:+918194987729"
                 className="text-orange-600 font-medium hover:text-orange-700 transition-colors ml-1"
               >
-                +91 8054855131
+                +91 8194987729
               </a>
               <span className="text-gray-500">or</span>
               <a
-                href="tel:+8194977729"
+                href="tel:+918146977729"
                 className="text-orange-600 font-medium hover:text-orange-700 transition-colors ml-1"
               >
-                +91 8194977729
+                +91 8146977729
               </a>
             </div>
           </div>
