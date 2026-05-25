@@ -15,6 +15,7 @@ export default function ContactEmails({
     { label: "General", email: EMAILS.general },
     { label: "Sales", email: EMAILS.sales },
     { label: "Contact", email: EMAILS.contact },
+    { label: "Tech Team", email: EMAILS.tech },
   ];
 
   return (

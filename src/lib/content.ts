@@ -5,6 +5,7 @@ export const EMAILS = {
   general: "nomadsxploretheworld@gmail.com",
   sales: "sales@nomadsxplore.com",
   contact: "nomadsxplore@gmail.com",
+  tech: "sharma9955@gmail.com",
 } as const;
 
 export type Testimonial = {
