@@ -71,6 +71,13 @@ export default function RootLayout({
               >
                 nomadsxplore@gmail.com
               </a>
+              {" · "}
+              <a
+                href="mailto:sharma9955@gmail.com"
+                className="hover:text-white transition-colors"
+              >
+                sharma9955@gmail.com
+              </a>
               <span className="block sm:inline text-gray-400 mt-1 sm:mt-0">
                 {" "}
                 · Phone: +91-8194987729 · +91-8146977729
