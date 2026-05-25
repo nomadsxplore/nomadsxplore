@@ -31,7 +31,7 @@ export default function TestimonialsPage() {
                 Explore Trips
               </Link>
               <a
-                href="https://instagram.com/nomads.exploretheworld"
+                href="https://www.instagram.com/nomads_xplore?utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-800 hover:bg-gray-50"
@@ -52,7 +52,7 @@ export default function TestimonialsPage() {
 
       <div className="max-w-7xl mx-auto px-6 pb-20 text-center">
         <a
-          href="https://instagram.com/nomads.exploretheworld"
+          href="https://www.instagram.com/nomads_xplore?utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 to-pink-600 text-white px-8 py-3 font-semibold shadow-lg hover:shadow-xl"
